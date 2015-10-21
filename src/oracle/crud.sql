@@ -3,7 +3,9 @@
 user == schema == project
 C: create user NAME identified by PASS;
 R: show user;
-U:  없음
+U: (없음) alter user hr identified by hr
+	account unlock;
+	-- 오라클에서 교육용으로 제공하는 스키마 hr을 사용할 수 있도록 변경함
 D: drop user NAME cascade;
 
 table == class
